@@ -9,8 +9,8 @@ export class EventBindingComponent implements OnInit {
   /**
    * These two variables are bound to the component via property binding.
    */
-  button1ClickedMessage: String = "button 1 not clicked";
-  button2ClickedMessage: String = "button 2 not clicked";
+  button1ClickedMessage: string = 'button 1 not clicked';
+  button2ClickedMessage: string = 'button 2 not clicked';
 
   /**
    * This method has been written to handle the button 1 click. When button 1 is clicked, this method will change
@@ -20,12 +20,11 @@ export class EventBindingComponent implements OnInit {
     this.button1ClickedMessage = "button 1 clicked!";
   }
   /**
-   * TODO: write a method to handle the clicking of button 2 which changes the button2ClickedMessage.
-   * The method should be bound to the click event of button 2 via event binding.
+   * Handles the click event for button 2 and updates the bound button2ClickedMessage.
    */
-
-
-
+  processClickButton2() {
+    this.button2ClickedMessage = "button 2 clicked!";
+  }
 
   constructor() { }
 

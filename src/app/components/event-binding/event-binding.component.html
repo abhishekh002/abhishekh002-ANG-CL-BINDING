@@ -16,8 +16,6 @@
   <p>TODO: replicate the functionality by introducing event binding to button 2, as well as writing a method within
     the component .ts file to process the clicking of button 2.</p>
 
-  <button>button 2</button>
-  <p>{{button2ClickedMessage}}</p>
-</div>
-
+  <button (click)="processClickButton2()" data-testid="button2">button 2</button>
+  <p data-testid="button2-message">{{button2ClickedMessage}}</p>
 </div>
